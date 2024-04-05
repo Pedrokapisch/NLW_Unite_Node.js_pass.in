@@ -1,0 +1,39 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": 345,
+  "details": "",
+  "maximumAttendees": 5
+}
+
+###
+
+POST http://localhost:3333/events/109175f6-9b52-49f6-9463-9db33a92351d/attendees
+Content-Type: application/json
+
+{
+  "name": "Bingus Maxwell",
+  "email": "bingus@hotmail.com.br"
+}
+
+###
+
+GET http://localhost:3333/events/df216eef-e274-4f73-8d36-5e79295ef783
+
+
+
+###
+
+GET http://localhost:3333/attendees/6/badge
+
+
+###
+
+GET http://localhost:3333/attendees/7/check-in
+
+
+
+###
+
+GET http://localhost:3333/events/df216eef-e274-4f73-8d36-5e79295ef783/attendees?query=leju
